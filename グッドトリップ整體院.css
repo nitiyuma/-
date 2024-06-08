@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color:#007b5e; /* ホバー時の背景色 */
+    background-color: #007b5e; /* ホバー時の背景色 */
     color: white; /* ホバー時の文字色 */
     transform: scale(1.1); /* ホバー時の拡大効果 */
 }
@@ -68,69 +68,26 @@ nav ul li a:hover {
 .contact-item {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color:#007b5e; /* 緑色の背景色 */
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
     margin-bottom: 10px;
 }
 
 .contact-item a {
+    background-color: #007b5e;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-    color: white;
-    text-decoration: none;
 }
 
 .contact-item .icon {
-    margin-right: 10px;
-}
-
-.contact-item.phone a {
-    border-radius: 25px;
-    background-color:#007b5e; /* 緑色の背景色 */
-    color: white; /* 文字色 */
-}
-.contact-item.email a {
-    border-radius: 25px;
-    background-color:#007b5e; /* 背景色 */
-    color: white;
-}
-.hours {
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-main {
-    padding: 20px;
+    margin-right: 5px;
 }
 
 .intro img {
     width: 100%;
     height: auto;
-}
-
-.testimonials {
-    padding: 20px;
-    background-color: #f0fff0; /* 淡い緑色 */
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .testimonial-item {
@@ -153,7 +110,7 @@ main {
 }
 
 footer {
-    background-color: white; /* 白 */
+    background-color: white; /* 白色 */
     color: #333;
     text-align: center;
     padding: 20px 0;
@@ -169,11 +126,6 @@ footer {
 .footer-content th, .footer-content td {
     border: 1px solid #ccc;
     padding: 10px;
-}
-.contact-info {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
 }
 
 /* モバイル対応用メディアクエリ */
@@ -202,4 +154,3 @@ footer {
         margin: 10px 0;
     }
 }
-
