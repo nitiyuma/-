@@ -93,8 +93,9 @@ nav ul li a:hover {
 .intro img {
     width: 100%;
     height: auto;
-    display: block;
+    object-fit: cover;
 }
+
 
 
 .testimonial-item {
