@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+    padding-top: 100px; /* Adjusted for fixed header */
+}
+
+header {
+    background-color: white; /* 白色 */
+    color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color:#007b5e; /* ホバー時の背景色 */
+    color: white; /* ホバー時の文字色 */
+    transform: scale(1.1); /* ホバー時の拡大効果 */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color:#007b5e; /* 緑色の背景色 */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-item .icon {
+    margin-right: 10px;
+}
+
+.contact-item.phone a {
+    border-radius: 25px;
+    background-color:#007b5e; /* 緑色の背景色 */
+    color: white; /* 文字色 */
+}
+.contact-item.email a {
+    border-radius: 25px;
+    background-color:#007b5e; /* 背景色 */
+    color: white;
+}
+.hours {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonials {
+    padding: 20px;
+    background-color: #f0fff0; /* 淡い緑色 */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item h3 {
+    color: #007b5e; /* 淡い緑色 */
+}
+
+.testimonial-item a {
+    text-decoration: none;
+    color: #007b5e; /* 淡い緑色 */
+    font-weight: bold;
+    float: right;
+}
+
+footer {
+    background-color: white; /* 白 */
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+.footer-content table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.footer-content th, .footer-content td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+
