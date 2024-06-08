@@ -134,7 +134,16 @@ footer {
     border: 1px solid #ccc;
     padding: 10px;
 }
-
+.menu-toggle {
+    display: none;
+    background-color: #007b5e; /* 背景色を緑に設定 */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+}
 /* モバイル対応用メディアクエリ */
 @media (max-width: 768px) {
     .header-content {
@@ -166,14 +175,5 @@ footer {
         margin: 10px 0;
     }
 
-    .menu-toggle {
-        display: block;
-        background-color: white;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+  
 }
