@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: white; /* 白色 */
+    background-color: white;
     color: #333;
     position: fixed;
     width: 100%;
@@ -31,6 +31,11 @@ header {
     width: 100%;
 }
 
+nav {
+    width: 100%;
+    text-align: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -50,9 +55,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #007b5e; /* ホバー時の背景色 */
-    color: white; /* ホバー時の文字色 */
-    transform: scale(1.1); /* ホバー時の拡大効果 */
+    background-color: #007b5e;
+    color: white;
+    transform: scale(1.1);
 }
 
 .contact-info {
@@ -99,18 +104,18 @@ nav ul li a:hover {
 }
 
 .testimonial-item h3 {
-    color: #007b5e; /* 淡い緑色 */
+    color: #007b5e;
 }
 
 .testimonial-item a {
     text-decoration: none;
-    color: #007b5e; /* 淡い緑色 */
+    color: #007b5e;
     font-weight: bold;
     float: right;
 }
 
 footer {
-    background-color: white; /* 白色 */
+    background-color: white;
     color: #333;
     text-align: center;
     padding: 20px 0;
@@ -148,9 +153,25 @@ footer {
     nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #007b5e;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
