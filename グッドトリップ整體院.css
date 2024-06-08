@@ -93,10 +93,8 @@ nav ul li a:hover {
 .intro img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    display: block;
 }
-
-
 
 .testimonial-item {
     background-color: white;
@@ -135,16 +133,7 @@ footer {
     border: 1px solid #ccc;
     padding: 10px;
 }
-.menu-toggle {
-    display: none;
-    background-color: #007b5e; /* 背景色を緑に設定 */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: 10px;
-}
+
 /* モバイル対応用メディアクエリ */
 @media (max-width: 768px) {
     .header-content {
@@ -175,15 +164,15 @@ footer {
     nav ul li {
         margin: 10px 0;
     }
-.menu-toggle {
-    display: none;
-    background-color: #007b5e; /* 背景色を緑に設定 */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    margin-bottom: 10px;
-}
-  
+
+    .menu-toggle {
+        display: block;
+        background-color: #007b5e;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 }
