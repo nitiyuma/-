@@ -29,7 +29,8 @@
                     [営業時間] 10:00-19:00 [営業日] 日・月・火　[定休日] 水・木・金・土
                 </div>
                 <nav>
-                    <ul>
+                    <button class="menu-toggle">メニュー</button>
+                    <ul class="nav-menu">
                         <li><a href="#">ホーム</a></li>
                         <li><a href="#">料金表</a></li>
                         <li><a href="#">施術者紹介</a></li>
@@ -110,5 +111,11 @@
             </table>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
