@@ -6,6 +6,17 @@
     <title>グッドトリップ整體院</title>
     <link rel="stylesheet" href="グッドトリップ整體院.css">
 </head>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var navUl = document.querySelector('nav ul');
+    
+    menuToggle.addEventListener('click', function() {
+        navUl.classList.toggle('active');
+    });
+});
+</script>
+
 <body>
     <header>
         <div class="header-content">
