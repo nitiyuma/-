@@ -1,69 +1,46 @@
-/* 基本スタイル */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
     background-color: white;
+    margin: 0;
+    padding-top: 100px; /* Adjusted for fixed header */
 }
 
-/* ヘッダーのスタイル */
 header {
     background-color: white;
-    padding: 20px;
-    text-align: center;
+    color: #333;
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
-    border-bottom: 2px solid #ccc;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
 .header-info {
-    text-align: left;
-}
-
-.contact-info {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.contact-item {
-    margin-left: 15px;
-}
-
-.contact-item.phone a {
-    background-color: #007b5e;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.contact-item.email a {
-    background-color: #007b5e;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.hours {
-    margin-left: 20px;
+nav {
+    width: 100%;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 nav ul li {
@@ -72,52 +49,78 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #007b5e;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
-    color: #004d40;
-}
-
-/* メニュー切り替えボタン */
-.menu-toggle {
-    display: none;
     background-color: #007b5e;
     color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
+    transform: scale(1.1);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-/* メインコンテンツ */
-main {
-    padding-top: 120px; /* ヘッダーの高さ分だけ余白を追加 */
+.contact-item a {
+    background-color: #007b5e;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
-.intro, .services, .testimonials, .greeting {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
+.contact-item .icon {
+    margin-right: 5px;
 }
 
 .intro img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    display: block;
 }
 
-/* フッターのスタイル */
+.testimonial-item {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.testimonial-item h3 {
+    color: #007b5e;
+}
+
+.testimonial-item a {
+    text-decoration: none;
+    color: #007b5e;
+    font-weight: bold;
+    float: right;
+}
+
 footer {
     background-color: white;
+    color: #333;
     text-align: center;
-    padding: 20px;
-    border-top: 2px solid #ccc;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
     margin-top: 40px;
 }
 
@@ -165,5 +168,11 @@ footer {
     .menu-toggle {
         display: block;
         background-color: #007b5e;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
