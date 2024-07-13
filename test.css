@@ -94,10 +94,10 @@ nav ul li a:hover {
 }
 
 .intro img {
-    max-width: 100%;
-    height: auto;
-    display: block;
     width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .testimonial-item {
