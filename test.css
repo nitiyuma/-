@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     background-color: white;
     margin: 0;
-    padding-top: 100px; /* Adjusted for fixed header */
+    padding-top: 0; /* Adjusted for fixed header */
 }
 
 header {
@@ -16,8 +16,11 @@ header {
     z-index: 1000;
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
+    height:auto;
 }
-
+.menu-toggle {
+    display:none;
+}
 .header-content {
     display: flex;
     flex-direction: column;
