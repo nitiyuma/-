@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     background-color: white;
     margin: 0;
-    padding-top: 0; /* Adjusted for fixed header */
+    padding-top: 100px; /* Adjusted for fixed header */
 }
 
 header {
@@ -93,11 +93,18 @@ nav ul li a:hover {
     margin-right: 5px;
 }
 
+.intro {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
 .intro img {
     width: 100%;
     height: auto;
-    object-fit: cover;
     display: block;
+    margin-top: 20px;
 }
 
 .testimonial-item {
