@@ -73,7 +73,7 @@
         </section>
     </main>
 
-    <footer>
+     <footer>
         <div class="footer-content">
             <p>グッドトリップ整體院 © 2024</p>
             <p>[営業時間] 10:00-19:00 [営業日] 日・月・火　[定休日] 水・木・金・土</p>
@@ -82,14 +82,41 @@
                     <th>施術時間</th>
                     <th>月</th>
                     <th>火</th>
+                    <th>水</th>
+                    <th>木</th>
+                    <th>金</th>
+                    <th>土</th>
+                    <th>日祝</th>
                 </tr>
                 <tr>
-                    <td>10:00 - 19:00</td>
-                    <td>◯</td>
-                    <td>◯</td>
+                    <th>午前 8:00〜12:00</th>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                </tr>
+                <tr>
+                    <th>午後 14:30〜21:30 (受付20:30まで)</th>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
+                    <td>★</td>
                 </tr>
             </table>
         </div>
     </footer>
+
+    <script>
+       document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+});
+    </script>
+
 </body>
 </html>
